@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+  <link rel=stylesheet href=form.css>
+  <style>
+    body {
+      font-family: Outfit;
+      background-color: #f4f4f4;
+      margin: 5px;
+    }
+    .container {
+      font-family: outfit, sans-serif;;
+      border-radius: 20px;
+      padding: 20px;
+      width: 640px;
+      height: 1825px;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+      max-height: 100%;
+      margin: 20px auto; /* Center horizontally */
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Embedded Google Form -->
+<div class="container">
+  <!-- Paste the embed code provided by Google Forms here -->
+  <!-- Example: -->
+  <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLScFsCXM9u9etXcpVz1ecpFaI2qn3iiyRmjOwb8oy0PILpmGBg/viewform?embedded=true" width="640" height="1900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+<script type="text/javascript">
+  var load = 0;
+  
+  document.getElementById('gform').onload = function(){
+      /*Execute on every reload on iFrame*/
+      load++;
+      if(load > 1){
+          /*Second reload is a submit*/
+          document.location = "thankyou.html";
+      }
+  }
+</script>
+</body>
+</html>

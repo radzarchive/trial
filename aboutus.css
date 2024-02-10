@@ -1,0 +1,25 @@
+button {
+    gap: 0.5rem;
+    font-family: Outfit, sans-serif;
+    border-radius: 5px;
+    margin-top: 1px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  button {
+    flex: 1;
+    background-color: #e6e6e6;
+    color: #000;
+    border: 0;
+    padding: 7px 14px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+  
+  button:hover,
+  button:focus {
+    background-color: #333;
+    color: #ffffff;
+  }
